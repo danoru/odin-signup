@@ -4,27 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Sign-Up Now</title>
 </head>
 <body>
-  <div>
-    <h1>ODIN</h1>
-  </div>
-  <div>
-    <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
-    <h2>You <em>know</em> you want to.</h2>
-    <div>
-      <h2>Let's do this!</h2>
-      <form>
-        <label>First Name</label><input>
-        <label>Last Name</label><input>
-        <label>Email</label><input>
-        <label>Phone Number</label><input>
-        <label>Password</label><input>
-        <label>Confirm Password</label><input>
-      </form>
-      <button>Create Account</button>
-      <p>Already have an account?<a>Log in</a></p>
+  <div class="content">
+    <div class="left-content">
+      <h1>ODIN</h1>
+    </div>
+    <div class="right-content">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+      <div>
+        <h2>Let's do this!</h2>
+        <form>
+          <label for="firstName">First Name</label><input name="firstName" id="firstName" type="text">
+          <label for="lastName">Last Name</label><input name="lastName" id="lastName" type="text">
+          <label for="emailAddress">Email</label><input name="emailAddress" id="emailAddress" type="email">
+          <label for="phoneNumber">Phone Number</label><input name="phoneNumber" id="phoneNumber" type="tel">
+          <label for="password">Password</label><input name="password" id="password" type="password">
+          <label for="confirmPassword">Confirm Password</label><input name="confirmPassword" id="confirmPassword" type="password">
+        </form>
+        <button>Create Account</button>
+        <p>Already have an account?<a>Log in</a></p>
+      </div>
     </div>
   </div>
 </body>

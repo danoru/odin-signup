@@ -1,5 +1,12 @@
 body {
-  background-color: violet;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
 }
 
 .content {
@@ -7,7 +14,33 @@ body {
 }
 
 .left-content {
+  background-image: url("./assets/astralsea.jpg");
+  background-position: -400px;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
   width: 40vw;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 75%);
+  font-family: "Germania One", cursive;
+  font-size: 30px;
+  margin-top: 20vh;
+  padding: 1rem;
+}
+
+.banner img {
+  height: 100px;
+  padding-right: 1rem;
+  vertical-align: middle;
+  width: auto;
+}
+
+.credit {
+  bottom: 0;
+  position: fixed;
+  width: 32vw;
 }
 
 .right-content{

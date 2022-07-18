@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Take A Coin</title>
+  <title>Take the Obol</title>
 </head>
 <body>
   <div class="content">
@@ -17,26 +17,55 @@
         <h1><img src="./assets/eyecon.png">The Fisherman</h1>
       </div>
       <div class="credit">
-        <p>Photo by <a href="https://www.artstation.com/wuggy">Ari-Matti Toivonen</a> on <a href="https://www.artstation.com">Artstation</a>.
+        <p>Artwork by <a href="https://www.artstation.com/wuggy">Ari-Matti Toivonen</a> on <a href="https://www.artstation.com">Artstation</a>.
       </div>
     </div>
     <div class="right-content">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-      <p>You <em>know</em> you want to.</p>
-      <div>
+      <div class="intro-content">
+        <p>A glint of gold catches your eye and drags your gaze to the ground below. A coin imprinted with the face of an old man with a single, glimmering eye rests at your feet. It reminds you of a tall tale the old fisherman in the tavern told you about the night before--a coin with the power to change your fate. You know you need something like this in your life to help you realize your deepest dreams. Take the obol into your palm <em>now</em> and make your future your own.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="form-content">
         <h2>Let's do this!</h2>
-        <form>
-          <label for="firstName">First Name</label><input name="firstName" id="firstName" type="text">
-          <label for="lastName">Last Name</label><input name="lastName" id="lastName" type="text">
-          <label for="emailAddress">Email</label><input name="emailAddress" id="emailAddress" type="email">
-          <label for="phoneNumber">Phone Number</label><input name="phoneNumber" id="phoneNumber" type="tel">
-          <label for="password">Password</label><input name="password" id="password" type="password">
-          <label for="confirmPassword">Confirm Password</label><input name="confirmPassword" id="confirmPassword" type="password">
+        <form action="#">
+          <div class="input-content">
+            <div class="form-item">
+              <label for="firstName">First Name</label>
+              <input name="firstName" id="firstName" type="text" placeholder="Gideon">
+            </div>
+            <div class="form-item">
+              <label for="lastName">Last Name</label>
+              <input name="lastName" id="lastName" type="text" placeholder="Summer">
+            </div>
+            <div class="form-item">
+              <label for="emailAddress">Email</label>
+              <input name="emailAddress" id="emailAddress" type="email" placeholder="sweetsummerchild@gmail.com">
+            </div>
+            <div class="form-item">
+              <label for="phoneNumber">Phone Number</label>
+              <input name="phoneNumber" id="phoneNumber" type="tel" placeholder="(777) 867-5309">
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input name="password" id="password" type="password">
+              <p id="errorMessage"></p>
+            </div>
+            <div class="form-item">
+              <label for="confirmPassword">Confirm Password</label>
+              <input name="confirmPassword" id="confirmPassword" type="password">
+            </div>
+          </div>
         </form>
-        <button>Create Account</button>
-        <p>Already have an account?<a>Log in</a></p>
+      </div>
+      <div class="account-content">
+        <button class="accountButton" onclick="validatePassword()">Create Account</button>
+        <p>Already have an account? <a href="./index.html">Log in</a>.</p>
+      </div>
+      <div class="disclaimer">
+        <p>This is not a real online service. Please do not put real information into the forms.</p>
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

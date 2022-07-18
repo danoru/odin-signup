@@ -1,12 +1,13 @@
 body {
-  background-color: black;
   color: white;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
   color: inherit;
+  cursor: pointer;
 }
 
 .content {
@@ -44,9 +45,80 @@ a {
   width: 32vw;
 }
 
-.right-content{
+.right-content {
+  background-color: black;
   display: flex;
-  font-size: 1.5rem;
   flex-flow: column nowrap;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  justify-content: space-between;
+}
+
+.right-content a {
+  color: #39A6A3;
+  text-decoration: none;
+}
+
+.intro-content {
+  max-width: 50vw;
+  padding-top: 20px;
+  word-wrap: normal;
+}
+
+.form-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input-content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1rem;
+  width: 40%;
+}
+
+.form-item input {
+  background-color: black;
+  border: 1px solid rgba(222, 238, 234, 85%);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-item input:focus {
+  border: 1px solid rgba(121, 0, 255, 85%);
+}
+
+#errorMessage {
+  color: #BF1363;
+  font-size: .75rem;
+}
+
+.accountButton {
+  background-color: black;
+  border: 2px solid #39A6A3;
+  border-radius: 5px;
+  color: #39A6A3;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 10px 40px;
+  margin: 40px 0;
+}
+
+.accountButton:hover {
+  background-color: #39A6A3;
+  color: black;
+}
+
+.disclaimer {
+  display: flex;
+  font-size: .75rem;
   justify-content: center;
 }
